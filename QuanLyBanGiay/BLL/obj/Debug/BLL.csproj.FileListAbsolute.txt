@@ -24,3 +24,16 @@ D:\HK7\DOANHK7\LTUD_QLYBANGIAY\QuanLyBanGiay\BLL\obj\Debug\BLL.csproj.CoreCompil
 D:\HK7\DOANHK7\LTUD_QLYBANGIAY\QuanLyBanGiay\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\HK7\DOANHK7\LTUD_QLYBANGIAY\QuanLyBanGiay\BLL\obj\Debug\BLL.dll
 D:\HK7\DOANHK7\LTUD_QLYBANGIAY\QuanLyBanGiay\BLL\obj\Debug\BLL.pdb
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\bin\Debug\BLL.dll
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\bin\Debug\BLL.pdb
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\bin\Debug\DAL.dll
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\bin\Debug\DTO.dll
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\bin\Debug\System.Data.SqlClient.dll
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\bin\Debug\DAL.pdb
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\bin\Debug\DTO.pdb
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\bin\Debug\System.Data.SqlClient.xml
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\obj\Debug\BLL.dll
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\BLL\obj\Debug\BLL.pdb

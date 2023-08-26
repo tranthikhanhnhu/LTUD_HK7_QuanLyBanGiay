@@ -10,7 +10,7 @@ namespace DAL
 {
     public class Database
     {
-        string strCon = @"Data Source=DESKTOP-Q67OM4B\SQLEXPRESS;Initial Catalog=QuanLyBanGiay;Integrated Security=True";
+        string strCon = @"Data Source=ASSINPC\CHINHSSQLEXPRESS;Initial Catalog=QuanLyBanGiay;Integrated Security=True";
         protected SqlConnection sqlCon = null;
 
         public void OpenConnection()

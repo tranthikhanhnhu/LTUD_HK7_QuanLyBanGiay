@@ -174,3 +174,17 @@ BEGIN
 END
 GO
 
+GO
+CREATE PROC Xoa_nv
+@MaNhanVien VARCHAR(8)
+
+AS
+BEGIN
+	IF EXISTS (SELECT [Mã nhân viên] FROM [Nhân viên] WHERE [Mã nhân viên] = @MaNhanVien)
+	BEGIN
+		DELETE FROM [Tài khoản] WHERE [Tên người dùng] = @MaNhanVien
+		DELETE FROM [Nhân viên] WHERE [Mã nhân viên] = @MaNhanVien
+	END
+END
+GO
+

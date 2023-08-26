@@ -73,7 +73,7 @@ namespace DAL
             sqlCmd.CommandType = CommandType.Text;
             sqlCmd.CommandText = "INSERT INTO [Hóa đơn bán hàng] VALUES (@mahd, @makh, @magiay, @soLuong)";
 
-            SqlParameter parMa = new SqlParameter("@ma", SqlDbType.VarChar);
+            SqlParameter parMa = new SqlParameter("@mahd", SqlDbType.VarChar);
             parMa.Value = hd.MaHoaDon;
             sqlCmd.Parameters.Add(parMa);
 

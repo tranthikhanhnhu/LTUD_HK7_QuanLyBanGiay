@@ -18,3 +18,14 @@ D:\HK7\DOANHK7\LTUD_QLYBANGIAY\QuanLyBanGiay\DTO\obj\Debug\DTO.dll
 D:\HK7\DOANHK7\LTUD_QLYBANGIAY\QuanLyBanGiay\DTO\obj\Debug\DTO.pdb
 D:\HK7\DOANHK7\LTUD_QLYBANGIAY\QuanLyBanGiay\DTO\obj\Debug\DTO.formSuaTTGiay.resources
 D:\HK7\DOANHK7\LTUD_QLYBANGIAY\QuanLyBanGiay\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\bin\Debug\DTO.dll
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\bin\Debug\DTO.pdb
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\bin\Debug\System.Data.SqlClient.dll
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\bin\Debug\System.Data.SqlClient.xml
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\obj\Debug\DTO.formSuaTTGiay.resources
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\obj\Debug\DTO.dll
+D:\LTUD\QuanLyBanGiay\LTUD_HK7_QuanLyBanGiay\QuanLyBanGiay\DTO\obj\Debug\DTO.pdb
