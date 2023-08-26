@@ -23,16 +23,61 @@ namespace DAL
             return dt;
         }
 
-        public DataTable HienThiDanhSachTimKiem(string ma)
+        public DataTable HienThiDanhSachTimKiem(string str)
         {
             OpenConnection();
             SqlCommand sqlCmd = new SqlCommand();
             sqlCmd.CommandType = CommandType.Text;
-            sqlCmd.CommandText = "SELECT * FROM Giày WHERE [Mã giày] like @ma ";
 
-            SqlParameter parMa = new SqlParameter("@ma", SqlDbType.VarChar);
-            parMa.Value = ma;
-            sqlCmd.Parameters.Add(parMa);
+            if(str.Equals("Mã giày"))
+            {
+                sqlCmd.CommandText = "SELECT * FROM Giày WHERE [Mã giày] like @str ";
+
+                SqlParameter parMa = new SqlParameter("@str", SqlDbType.VarChar);
+                parMa.Value = str;
+                sqlCmd.Parameters.Add(parMa);
+            }
+            else
+            {
+                sqlCmd.CommandText = "SELECT * FROM Giày WHERE [Tên giày] like @str ";
+
+                SqlParameter parTen = new SqlParameter("@str", SqlDbType.NVarChar);
+                parTen.Value = str;
+                sqlCmd.Parameters.Add(parTen);
+            }
+
+            sqlCmd.Connection = sqlCon;
+
+            SqlDataAdapter da = new SqlDataAdapter(sqlCmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            CloseConnection();
+            return dt;
+        }
+
+        public DataTable HienThiDanhSachTimKiem(double val , string str)
+        {
+            OpenConnection();
+            SqlCommand sqlCmd = new SqlCommand();
+            sqlCmd.CommandType = CommandType.Text;
+
+            if (str.Equals("Size"))
+            {
+                sqlCmd.CommandText = "SELECT * FROM Giày WHERE [Size] = @val ";
+
+                SqlParameter parSize = new SqlParameter("@val", SqlDbType.Float);
+                parSize.Value = val;
+                sqlCmd.Parameters.Add(parSize);
+            }
+            else
+            {
+                sqlCmd.CommandText = "SELECT * FROM Giày WHERE [Giá] = @val ";
+
+                SqlParameter parGia = new SqlParameter("@val", SqlDbType.Real);
+                parGia.Value = val;
+                sqlCmd.Parameters.Add(parGia);
+            }
 
             sqlCmd.Connection = sqlCon;
 

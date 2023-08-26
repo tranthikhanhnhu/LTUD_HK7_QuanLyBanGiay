@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BLL;
+using Guna.UI2.WinForms;
 
 namespace GUI
 {
@@ -17,6 +18,7 @@ namespace GUI
         private dtoTaiKhoan tk;
         private formDangNhap dn;
         private Form currentFormChild;
+        private Guna2GradientButton currentButton;
 
         public formMenu()
         {
@@ -46,6 +48,24 @@ namespace GUI
             childForm.Show();
         }
 
+        private void effectButton(object sender)
+        {
+            if (currentButton != null)
+            {
+                effectlessButton();
+            }
+            currentButton = (Guna2GradientButton)sender;
+            currentButton.FillColor = Color.FromArgb(149, 67, 167);
+            currentButton.FillColor2 = Color.FromArgb(74, 38, 171);
+
+        }
+
+        private void effectlessButton()
+        {
+            currentButton.FillColor = Color.FromArgb(33, 36, 77);
+            currentButton.FillColor2 = Color.FromArgb(33, 36, 77);
+        }
+
         private void ctrClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -53,11 +73,14 @@ namespace GUI
 
         private void btGiay_Click(object sender, EventArgs e)
         {
+            effectButton(sender);
             openFormChild(new formDanhSachGiay());
         }
 
         private void btTaiKhoan_Click(object sender, EventArgs e)
         {
+            effectButton(sender);
+
             dtoNhanVien nv = new dtoNhanVien();
             bllNhanVien busNV = new bllNhanVien();
 
@@ -77,6 +100,7 @@ namespace GUI
 
         private void btHoaDon_Click(object sender, EventArgs e)
         {
+            effectButton(sender);
             openFormChild(new formHDBanGiay());
         }
 
@@ -85,7 +109,8 @@ namespace GUI
             if(currentFormChild != null)
             {
                 currentFormChild.Close();
-            }            
+            }
+            effectlessButton();
         }
     }
 }

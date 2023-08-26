@@ -89,6 +89,8 @@ namespace GUI
             // 
             // dtList
             // 
+            this.dtList.AllowUserToAddRows = false;
+            this.dtList.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtList.AutoGenerateColumns = false;

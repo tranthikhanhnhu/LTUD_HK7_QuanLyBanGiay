@@ -77,14 +77,32 @@ namespace GUI
 
         private void btTimKiem_Click(object sender, EventArgs e)
         {
-            string ma = "%" + txtFind.Text.Trim() + "%";
             if (txtFind.Text.Trim() == "")
             {
                 dtList.DataSource = giayBll.HienThiDanhSachGiay();
             }
             else
             {
-                dtList.DataSource = giayBll.TimKiemVoiMaGiay(ma);
+                if(cbOP.SelectedItem.ToString().Equals("Mã giày"))
+                {
+                    string str = "%" + txtFind.Text.Trim() + "%";
+                    dtList.DataSource = giayBll.TimKiemVoiMaGiay(str);
+                } 
+                else if(cbOP.SelectedItem.ToString().Equals("Tên giày"))
+                {
+                    string str = "%" + txtFind.Text.Trim() + "%";
+                    dtList.DataSource = giayBll.TimKiemVoiTen(str);
+                }
+                else if (cbOP.SelectedItem.ToString().Equals("Size"))
+                {
+                    double val = double.Parse(txtFind.Text.Trim());
+                    dtList.DataSource = giayBll.TimKiemVoiSize(val, cbOP.SelectedItem.ToString());
+                }
+                else if(cbOP.SelectedItem.ToString().Equals("Giá"))
+                {
+                    double val = double.Parse(txtFind.Text.Trim());
+                    dtList.DataSource = giayBll.TimKiemVoiGia(val, cbOP.SelectedItem.ToString());
+                }
             }
         }
 
