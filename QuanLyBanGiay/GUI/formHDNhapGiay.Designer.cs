@@ -70,13 +70,14 @@ namespace GUI
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(213)))), ((int)(((byte)(234)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1000, 825);
             this.guna2CustomGradientPanel1.TabIndex = 1;
             // 
             // guna2CustomGradientPanel2
             // 
+            this.guna2CustomGradientPanel2.AutoSize = true;
             this.guna2CustomGradientPanel2.Controls.Add(this.dtList);
             this.guna2CustomGradientPanel2.Controls.Add(this.btThem);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2Panel1);
@@ -86,7 +87,7 @@ namespace GUI
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(213)))), ((int)(((byte)(234)))));
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1000, 825);
             this.guna2CustomGradientPanel2.TabIndex = 2;
@@ -124,7 +125,7 @@ namespace GUI
             this.dtList.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtList.Location = new System.Drawing.Point(53, 148);
-            this.dtList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtList.Margin = new System.Windows.Forms.Padding(4);
             this.dtList.Name = "dtList";
             this.dtList.ReadOnly = true;
             this.dtList.RowHeadersVisible = false;
@@ -211,7 +212,7 @@ namespace GUI
             this.btThem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.btThem.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThem.Location = new System.Drawing.Point(785, 731);
-            this.btThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btThem.Margin = new System.Windows.Forms.Padding(4);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(160, 49);
             this.btThem.TabIndex = 2;
@@ -226,7 +227,7 @@ namespace GUI
             this.guna2Panel1.Controls.Add(this.txtFind);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1000, 78);
             this.guna2Panel1.TabIndex = 0;
@@ -244,7 +245,7 @@ namespace GUI
             this.cbOP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbOP.ItemHeight = 30;
             this.cbOP.Location = new System.Drawing.Point(392, 15);
-            this.cbOP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbOP.Margin = new System.Windows.Forms.Padding(4);
             this.cbOP.Name = "cbOP";
             this.cbOP.Size = new System.Drawing.Size(199, 36);
             this.cbOP.TabIndex = 2;
@@ -264,7 +265,7 @@ namespace GUI
             this.btFind.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.btFind.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btFind.Location = new System.Drawing.Point(812, 21);
-            this.btFind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btFind.Margin = new System.Windows.Forms.Padding(4);
             this.btFind.Name = "btFind";
             this.btFind.Size = new System.Drawing.Size(133, 37);
             this.btFind.TabIndex = 1;
@@ -320,11 +321,12 @@ namespace GUI
             this.ClientSize = new System.Drawing.Size(1000, 825);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formHDNhapGiay";
             this.Text = "formHDNhapGiay";
             this.Load += new System.EventHandler(this.formHDNhapGiay_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.PerformLayout();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hóaĐơnNhậpHàngBindingSource2)).EndInit();

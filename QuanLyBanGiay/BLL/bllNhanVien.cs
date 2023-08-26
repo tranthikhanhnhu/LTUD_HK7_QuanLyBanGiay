@@ -22,7 +22,7 @@ namespace BLL
             return nv.DanhSachID();
         }
 
-        public DataTable HienThiDanhSachGiay()
+        public DataTable HienThiDanhSachNV()
         {
             return nv.HienThiDanhSach();
         }
@@ -32,7 +32,7 @@ namespace BLL
             return this.nv.ThemNV(nv);
         }
 
-        public bool XoaGiay(string ma)
+        public bool XoaNV(string ma)
         {
             return nv.XoaNV(ma);
         }

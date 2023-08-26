@@ -162,6 +162,7 @@ namespace GUI
             this.btDangXuat.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
             this.btDangXuat.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(38)))), ((int)(((byte)(171)))));
             this.btDangXuat.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDangXuat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btDangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btDangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btDangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -328,6 +329,7 @@ namespace GUI
             // 
             // guna2DragControl1
             // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.TargetControl = this;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
@@ -340,6 +342,7 @@ namespace GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btDangXuat;
             this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.pBody);
             this.Controls.Add(this.guna2Panel2);

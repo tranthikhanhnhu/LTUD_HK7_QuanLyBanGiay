@@ -76,8 +76,9 @@ namespace GUI
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(300, 500);
+            this.guna2Panel1.Size = new System.Drawing.Size(400, 615);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btThoat
@@ -93,9 +94,10 @@ namespace GUI
             this.btThoat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(36)))), ((int)(((byte)(77)))));
             this.btThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.btThoat.ForeColor = System.Drawing.Color.White;
-            this.btThoat.Location = new System.Drawing.Point(155, 356);
+            this.btThoat.Location = new System.Drawing.Point(207, 438);
+            this.btThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(120, 45);
+            this.btThoat.Size = new System.Drawing.Size(160, 55);
             this.btThoat.TabIndex = 4;
             this.btThoat.Text = "Thoát";
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
@@ -113,9 +115,10 @@ namespace GUI
             this.btDangNhap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.btDangNhap.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btDangNhap.Location = new System.Drawing.Point(25, 356);
+            this.btDangNhap.Location = new System.Drawing.Point(33, 438);
+            this.btDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btDangNhap.Name = "btDangNhap";
-            this.btDangNhap.Size = new System.Drawing.Size(120, 45);
+            this.btDangNhap.Size = new System.Drawing.Size(160, 55);
             this.btDangNhap.TabIndex = 3;
             this.btDangNhap.Text = "Đăng nhập";
             this.btDangNhap.Click += new System.EventHandler(this.btDangNhap_Click);
@@ -136,14 +139,14 @@ namespace GUI
             this.txtPass.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtPass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
-            this.txtPass.Location = new System.Drawing.Point(25, 233);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPass.Location = new System.Drawing.Point(33, 287);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '●';
             this.txtPass.PlaceholderForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtPass.PlaceholderText = "Password";
             this.txtPass.SelectedText = "";
-            this.txtPass.Size = new System.Drawing.Size(250, 35);
+            this.txtPass.Size = new System.Drawing.Size(333, 43);
             this.txtPass.TabIndex = 2;
             this.txtPass.UseSystemPasswordChar = true;
             // 
@@ -163,14 +166,14 @@ namespace GUI
             this.txtUser.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
-            this.txtUser.Location = new System.Drawing.Point(25, 175);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUser.Location = new System.Drawing.Point(33, 215);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtUser.Name = "txtUser";
             this.txtUser.PasswordChar = '\0';
             this.txtUser.PlaceholderForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtUser.PlaceholderText = "Username";
             this.txtUser.SelectedText = "";
-            this.txtUser.Size = new System.Drawing.Size(250, 35);
+            this.txtUser.Size = new System.Drawing.Size(333, 43);
             this.txtUser.TabIndex = 1;
             // 
             // guna2CirclePictureBox1
@@ -179,10 +182,11 @@ namespace GUI
             this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(36)))), ((int)(((byte)(77)))));
             this.guna2CirclePictureBox1.Image = global::GUI.Properties.Resources.logo;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(75, 75);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(100, 92);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -195,9 +199,10 @@ namespace GUI
             this.guna2Panel2.Controls.Add(this.ctrClose);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel2.Location = new System.Drawing.Point(300, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(400, 0);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(500, 500);
+            this.guna2Panel2.Size = new System.Drawing.Size(667, 615);
             this.guna2Panel2.TabIndex = 1;
             // 
             // guna2ControlBox2
@@ -206,9 +211,10 @@ namespace GUI
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(403, 0);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(537, 0);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(60, 36);
             this.guna2ControlBox2.TabIndex = 2;
             // 
             // ctrClose
@@ -216,9 +222,10 @@ namespace GUI
             this.ctrClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ctrClose.FillColor = System.Drawing.Color.Transparent;
             this.ctrClose.IconColor = System.Drawing.Color.White;
-            this.ctrClose.Location = new System.Drawing.Point(454, 0);
+            this.ctrClose.Location = new System.Drawing.Point(605, 0);
+            this.ctrClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ctrClose.Name = "ctrClose";
-            this.ctrClose.Size = new System.Drawing.Size(45, 29);
+            this.ctrClose.Size = new System.Drawing.Size(60, 36);
             this.ctrClose.TabIndex = 1;
             this.ctrClose.Click += new System.EventHandler(this.ctrClose_Click);
             // 
@@ -229,8 +236,9 @@ namespace GUI
             this.guna2PictureBox1.Image = global::GUI.Properties.Resources.IMGLOGO;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(500, 500);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(667, 615);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -238,13 +246,16 @@ namespace GUI
             // 
             // formDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btDangNhap;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.CancelButton = this.btThoat;
+            this.ClientSize = new System.Drawing.Size(1067, 615);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "formDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formDangNhap";
