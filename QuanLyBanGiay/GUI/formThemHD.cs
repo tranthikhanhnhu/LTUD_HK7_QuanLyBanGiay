@@ -50,7 +50,7 @@ namespace GUI
 
             string maGiay = txtMaGiay.Text.Trim();
 
-            foreach (string maG in hd.DanhSachMaHD())
+            foreach (string maG in giay.DanhSachMaGiay())
             {
                 if (maGiay.Equals(maG))
                 {
@@ -74,7 +74,7 @@ namespace GUI
             {
                 dtoHoaDonBanGiay hoaDonBanGiay = new dtoHoaDonBanGiay();
 
-                if(flag2)
+                if(!flag2)
                 {
                     makh = kh.KhachHang(ten).Ten;
                 }

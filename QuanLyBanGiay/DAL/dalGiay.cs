@@ -51,7 +51,7 @@ namespace DAL
 
             SqlCommand sqlCmd = new SqlCommand();
             sqlCmd.CommandType = CommandType.Text;
-            sqlCmd.CommandText = "select * from Giày";
+            sqlCmd.CommandText = "select [Mã giày] from Giày";
             sqlCmd.Connection = sqlCon;
 
             SqlDataReader reader = sqlCmd.ExecuteReader();

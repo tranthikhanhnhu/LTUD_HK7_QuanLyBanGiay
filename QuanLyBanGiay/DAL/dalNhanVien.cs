@@ -90,16 +90,16 @@ namespace DAL
             parMa.Value = nv.MaNhanVien;
             sqlCmd.Parameters.Add(parMa);
 
-            SqlParameter parTen = new SqlParameter("@ten", SqlDbType.VarChar);
+            SqlParameter parTen = new SqlParameter("@ten", SqlDbType.NVarChar);
             parTen.Value = nv.TenNV;
             sqlCmd.Parameters.Add(parTen);
 
-            SqlParameter parNS = new SqlParameter("@ngaysinh", SqlDbType.VarChar);
-            parNS.Value = nv.MaNhanVien;
+            SqlParameter parNS = new SqlParameter("@ngaysinh", SqlDbType.Date);
+            parNS.Value = nv.NgaySinh;
             sqlCmd.Parameters.Add(parNS);
 
             SqlParameter parSDT = new SqlParameter("@sdt", SqlDbType.VarChar);
-            parSDT.Value = nv.MaNhanVien;
+            parSDT.Value = nv.SDT;
             sqlCmd.Parameters.Add(parSDT);
 
             sqlCmd.Connection = sqlCon;
@@ -118,12 +118,9 @@ namespace DAL
         {
             OpenConnection();
             SqlCommand sqlCmd = new SqlCommand();
-            sqlCmd.CommandType = CommandType.Text;
-            sqlCmd.CommandText = "DELETE FROM [Nhân viên] WHERE [Mã nhân viên] = @ma ";
-
-            SqlParameter parMa = new SqlParameter("@ma", SqlDbType.VarChar);
-            parMa.Value = ma;
-            sqlCmd.Parameters.Add(parMa);
+            sqlCmd.CommandType = CommandType.StoredProcedure;
+            sqlCmd.CommandText = "Xoa_NV";
+            sqlCmd.Parameters.AddWithValue("@ma", ma);
 
             sqlCmd.Connection = sqlCon;
             int kt = sqlCmd.ExecuteNonQuery();

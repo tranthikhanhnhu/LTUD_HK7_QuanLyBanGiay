@@ -41,7 +41,7 @@ namespace GUI
 
         private void btSua_Click(object sender, EventArgs e)
         {
-            int Lsize = dtList.RowCount;
+            int Lsize = dtList.RowCount-1;
             if (Lsize == 0)
             {
                 MessageBox.Show("Danh sách giày rỗng, vui lòng thêm thông tin giày trước khi thực hiện thay đổi!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -56,7 +56,7 @@ namespace GUI
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            int Lsize = dtList.RowCount;
+            int Lsize = dtList.RowCount-1;
             if (Lsize == 0)
             {
                 MessageBox.Show("Danh sách giày rỗng, Không có đối tượng để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -91,7 +91,7 @@ namespace GUI
         private void dtList_Click(object sender, EventArgs e)
         {
 
-            int Lsize = dtList.RowCount;
+            int Lsize = dtList.RowCount-1;
 
             if (Lsize != 0)
             {

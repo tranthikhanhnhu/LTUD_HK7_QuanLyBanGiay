@@ -44,7 +44,7 @@ namespace DAL
             sqlCmd.Connection = sqlCon;
 
             SqlParameter parMa = new SqlParameter("@ten", SqlDbType.Char);
-            parMa.Value = kh.Ten;
+            parMa.Value = ten;
             sqlCmd.Parameters.Add(parMa);
 
             SqlDataReader reader = sqlCmd.ExecuteReader();
