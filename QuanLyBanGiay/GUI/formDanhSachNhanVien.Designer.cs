@@ -39,27 +39,27 @@ namespace GUI
             this.họTênNhânViênDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngàySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sđtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nhânViênBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.nhânViênBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new GUI.DataSet1();
             this.btXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btThem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbOP = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btTimKiem = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtFind = new Guna.UI2.WinForms.Guna2TextBox();
+            this.nhânViênBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.nhânViênBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nhân_viênTableAdapter = new GUI.DataSet1TableAdapters.Nhân_viênTableAdapter();
             this.nhânViênBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.nhânViênBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
@@ -80,6 +80,8 @@ namespace GUI
             // 
             // dtList
             // 
+            this.dtList.AllowUserToAddRows = false;
+            this.dtList.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtList.AutoGenerateColumns = false;
@@ -170,10 +172,10 @@ namespace GUI
             this.sđtDataGridViewTextBoxColumn.Name = "sđtDataGridViewTextBoxColumn";
             this.sđtDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // nhânViênBindingSource2
+            // nhânViênBindingSource3
             // 
-            this.nhânViênBindingSource2.DataMember = "Nhân viên";
-            this.nhânViênBindingSource2.DataSource = this.dataSet1;
+            this.nhânViênBindingSource3.DataMember = "Nhân viên";
+            this.nhânViênBindingSource3.DataSource = this.dataSet1;
             // 
             // dataSet1
             // 
@@ -227,31 +229,35 @@ namespace GUI
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox1);
+            this.guna2Panel1.Controls.Add(this.cbOP);
             this.guna2Panel1.Controls.Add(this.btTimKiem);
-            this.guna2Panel1.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel1.Controls.Add(this.txtFind);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(750, 63);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // guna2ComboBox1
+            // cbOP
             // 
-            this.guna2ComboBox1.AutoRoundedCorners = true;
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 17;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(322, 12);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(150, 36);
-            this.guna2ComboBox1.TabIndex = 2;
+            this.cbOP.AutoRoundedCorners = true;
+            this.cbOP.BackColor = System.Drawing.Color.Transparent;
+            this.cbOP.BorderRadius = 17;
+            this.cbOP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbOP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOP.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbOP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbOP.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbOP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbOP.ItemHeight = 30;
+            this.cbOP.Items.AddRange(new object[] {
+            "Mã nhân viên",
+            "Họ tên nhân viên"});
+            this.cbOP.Location = new System.Drawing.Point(322, 12);
+            this.cbOP.Name = "cbOP";
+            this.cbOP.Size = new System.Drawing.Size(150, 36);
+            this.cbOP.StartIndex = 0;
+            this.cbOP.TabIndex = 2;
             // 
             // btTimKiem
             // 
@@ -270,29 +276,34 @@ namespace GUI
             this.btTimKiem.TabIndex = 1;
             this.btTimKiem.Text = "Tìm kiếm";
             // 
-            // guna2TextBox1
+            // txtFind
             // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.AutoRoundedCorners = true;
-            this.guna2TextBox1.BorderRadius = 14;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(478, 12);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(150, 30);
-            this.guna2TextBox1.TabIndex = 0;
+            this.txtFind.Animated = true;
+            this.txtFind.AutoRoundedCorners = true;
+            this.txtFind.BorderRadius = 14;
+            this.txtFind.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFind.DefaultText = "";
+            this.txtFind.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtFind.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtFind.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFind.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFind.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFind.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtFind.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFind.Location = new System.Drawing.Point(478, 12);
+            this.txtFind.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.PasswordChar = '\0';
+            this.txtFind.PlaceholderText = "";
+            this.txtFind.SelectedText = "";
+            this.txtFind.Size = new System.Drawing.Size(150, 30);
+            this.txtFind.TabIndex = 0;
+            // 
+            // nhânViênBindingSource2
+            // 
+            this.nhânViênBindingSource2.DataMember = "Nhân viên";
+            this.nhânViênBindingSource2.DataSource = this.dataSet1;
             // 
             // guna2DragControl1
             // 
@@ -314,15 +325,11 @@ namespace GUI
             this.nhânViênBindingSource1.DataMember = "Nhân viên";
             this.nhânViênBindingSource1.DataSource = this.dataSet1;
             // 
-            // nhânViênBindingSource3
-            // 
-            this.nhânViênBindingSource3.DataMember = "Nhân viên";
-            this.nhânViênBindingSource3.DataSource = this.dataSet1;
-            // 
             // formDanhSachNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(750, 670);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -333,12 +340,12 @@ namespace GUI
             this.Load += new System.EventHandler(this.formDanhSachNhanVien_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhânViênBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,11 +355,11 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtFind;
         private Guna.UI2.WinForms.Guna2Button btTimKiem;
         private Guna.UI2.WinForms.Guna2Button btThem;
         private Guna.UI2.WinForms.Guna2Button btXoa;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox cbOP;
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource nhânViênBindingSource;
         private DataSet1TableAdapters.Nhân_viênTableAdapter nhân_viênTableAdapter;

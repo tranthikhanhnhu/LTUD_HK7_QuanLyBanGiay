@@ -52,8 +52,9 @@ namespace GUI
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(500, 30);
+            this.guna2Panel1.Size = new System.Drawing.Size(667, 37);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2ControlBox1
@@ -63,8 +64,9 @@ namespace GUI
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox1.Location = new System.Drawing.Point(0, -2);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 30);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 37);
             this.guna2ControlBox1.TabIndex = 0;
             // 
             // guna2Panel2
@@ -80,9 +82,10 @@ namespace GUI
             this.guna2Panel2.Controls.Add(this.txtGia);
             this.guna2Panel2.Controls.Add(this.txtMa);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 30);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 37);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(500, 770);
+            this.guna2Panel2.Size = new System.Drawing.Size(667, 948);
             this.guna2Panel2.TabIndex = 1;
             // 
             // label2
@@ -90,7 +93,8 @@ namespace GUI
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(258, 457);
+            this.label2.Location = new System.Drawing.Point(344, 562);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 23);
             this.label2.TabIndex = 19;
@@ -101,7 +105,8 @@ namespace GUI
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 458);
+            this.label1.Location = new System.Drawing.Point(52, 564);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 23);
             this.label1.TabIndex = 18;
@@ -112,7 +117,7 @@ namespace GUI
             this.btXacNhan.Animated = true;
             this.btXacNhan.AutoRoundedCorners = true;
             this.btXacNhan.BackColor = System.Drawing.Color.Transparent;
-            this.btXacNhan.BorderRadius = 21;
+            this.btXacNhan.BorderRadius = 26;
             this.btXacNhan.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
             this.btXacNhan.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(38)))), ((int)(((byte)(171)))));
             this.btXacNhan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -127,9 +132,10 @@ namespace GUI
             this.btXacNhan.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(36)))), ((int)(((byte)(77)))));
             this.btXacNhan.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(213)))), ((int)(((byte)(234)))));
             this.btXacNhan.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXacNhan.Location = new System.Drawing.Point(263, 661);
+            this.btXacNhan.Location = new System.Drawing.Point(351, 814);
+            this.btXacNhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btXacNhan.Name = "btXacNhan";
-            this.btXacNhan.Size = new System.Drawing.Size(180, 45);
+            this.btXacNhan.Size = new System.Drawing.Size(240, 55);
             this.btXacNhan.TabIndex = 17;
             this.btXacNhan.Text = "Xác nhận";
             this.btXacNhan.Click += new System.EventHandler(this.btXacNhan_Click);
@@ -164,9 +170,10 @@ namespace GUI
             "41",
             "41.5",
             "42"});
-            this.cbSize.Location = new System.Drawing.Point(85, 444);
+            this.cbSize.Location = new System.Drawing.Point(113, 546);
+            this.cbSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbSize.Name = "cbSize";
-            this.cbSize.Size = new System.Drawing.Size(100, 36);
+            this.cbSize.Size = new System.Drawing.Size(132, 36);
             this.cbSize.TabIndex = 15;
             // 
             // numSoLuong
@@ -174,14 +181,14 @@ namespace GUI
             this.numSoLuong.AutoRoundedCorners = true;
             this.numSoLuong.BackColor = System.Drawing.Color.Transparent;
             this.numSoLuong.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.numSoLuong.BorderRadius = 16;
+            this.numSoLuong.BorderRadius = 20;
             this.numSoLuong.BorderThickness = 2;
             this.numSoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numSoLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numSoLuong.Location = new System.Drawing.Point(343, 445);
-            this.numSoLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.numSoLuong.Location = new System.Drawing.Point(457, 548);
+            this.numSoLuong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numSoLuong.Name = "numSoLuong";
-            this.numSoLuong.Size = new System.Drawing.Size(100, 35);
+            this.numSoLuong.Size = new System.Drawing.Size(133, 43);
             this.numSoLuong.TabIndex = 14;
             this.numSoLuong.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.numSoLuong.UseTransparentBackground = true;
@@ -192,7 +199,7 @@ namespace GUI
             this.txtTen.AutoRoundedCorners = true;
             this.txtTen.BackColor = System.Drawing.Color.Transparent;
             this.txtTen.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.txtTen.BorderRadius = 17;
+            this.txtTen.BorderRadius = 21;
             this.txtTen.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTen.DefaultText = "";
             this.txtTen.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -204,14 +211,14 @@ namespace GUI
             this.txtTen.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtTen.ForeColor = System.Drawing.Color.Black;
             this.txtTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTen.Location = new System.Drawing.Point(43, 125);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtTen.Location = new System.Drawing.Point(57, 154);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtTen.Name = "txtTen";
             this.txtTen.PasswordChar = '\0';
             this.txtTen.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtTen.PlaceholderText = "Tên giày";
             this.txtTen.SelectedText = "";
-            this.txtTen.Size = new System.Drawing.Size(400, 36);
+            this.txtTen.Size = new System.Drawing.Size(533, 44);
             this.txtTen.TabIndex = 10;
             // 
             // txtNSX
@@ -220,7 +227,7 @@ namespace GUI
             this.txtNSX.AutoRoundedCorners = true;
             this.txtNSX.BackColor = System.Drawing.Color.Transparent;
             this.txtNSX.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.txtNSX.BorderRadius = 17;
+            this.txtNSX.BorderRadius = 21;
             this.txtNSX.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNSX.DefaultText = "";
             this.txtNSX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -232,14 +239,14 @@ namespace GUI
             this.txtNSX.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtNSX.ForeColor = System.Drawing.Color.Black;
             this.txtNSX.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNSX.Location = new System.Drawing.Point(43, 209);
-            this.txtNSX.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtNSX.Location = new System.Drawing.Point(57, 257);
+            this.txtNSX.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtNSX.Name = "txtNSX";
             this.txtNSX.PasswordChar = '\0';
             this.txtNSX.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtNSX.PlaceholderText = "Nhà sản xuất";
             this.txtNSX.SelectedText = "";
-            this.txtNSX.Size = new System.Drawing.Size(400, 36);
+            this.txtNSX.Size = new System.Drawing.Size(533, 44);
             this.txtNSX.TabIndex = 9;
             // 
             // txtMau
@@ -248,7 +255,7 @@ namespace GUI
             this.txtMau.AutoRoundedCorners = true;
             this.txtMau.BackColor = System.Drawing.Color.Transparent;
             this.txtMau.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.txtMau.BorderRadius = 17;
+            this.txtMau.BorderRadius = 21;
             this.txtMau.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMau.DefaultText = "";
             this.txtMau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -260,14 +267,14 @@ namespace GUI
             this.txtMau.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtMau.ForeColor = System.Drawing.Color.Black;
             this.txtMau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMau.Location = new System.Drawing.Point(43, 293);
-            this.txtMau.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtMau.Location = new System.Drawing.Point(57, 361);
+            this.txtMau.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtMau.Name = "txtMau";
             this.txtMau.PasswordChar = '\0';
             this.txtMau.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtMau.PlaceholderText = "Màu sắc";
             this.txtMau.SelectedText = "";
-            this.txtMau.Size = new System.Drawing.Size(400, 36);
+            this.txtMau.Size = new System.Drawing.Size(533, 44);
             this.txtMau.TabIndex = 8;
             // 
             // txtGia
@@ -276,7 +283,7 @@ namespace GUI
             this.txtGia.AutoRoundedCorners = true;
             this.txtGia.BackColor = System.Drawing.Color.Transparent;
             this.txtGia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.txtGia.BorderRadius = 17;
+            this.txtGia.BorderRadius = 21;
             this.txtGia.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGia.DefaultText = "";
             this.txtGia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -288,14 +295,14 @@ namespace GUI
             this.txtGia.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtGia.ForeColor = System.Drawing.Color.Black;
             this.txtGia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGia.Location = new System.Drawing.Point(43, 377);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtGia.Location = new System.Drawing.Point(57, 464);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtGia.Name = "txtGia";
             this.txtGia.PasswordChar = '\0';
             this.txtGia.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtGia.PlaceholderText = "Giá bán";
             this.txtGia.SelectedText = "";
-            this.txtGia.Size = new System.Drawing.Size(400, 36);
+            this.txtGia.Size = new System.Drawing.Size(533, 44);
             this.txtGia.TabIndex = 7;
             // 
             // txtMa
@@ -304,7 +311,7 @@ namespace GUI
             this.txtMa.AutoRoundedCorners = true;
             this.txtMa.BackColor = System.Drawing.Color.Transparent;
             this.txtMa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.txtMa.BorderRadius = 17;
+            this.txtMa.BorderRadius = 21;
             this.txtMa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMa.DefaultText = "";
             this.txtMa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -317,24 +324,26 @@ namespace GUI
             this.txtMa.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtMa.ForeColor = System.Drawing.Color.Black;
             this.txtMa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMa.Location = new System.Drawing.Point(43, 41);
-            this.txtMa.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtMa.Location = new System.Drawing.Point(57, 50);
+            this.txtMa.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtMa.Name = "txtMa";
             this.txtMa.PasswordChar = '\0';
             this.txtMa.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtMa.PlaceholderText = "Mã giày";
             this.txtMa.SelectedText = "";
-            this.txtMa.Size = new System.Drawing.Size(400, 36);
+            this.txtMa.Size = new System.Drawing.Size(533, 44);
             this.txtMa.TabIndex = 6;
             // 
             // formSuaTTGiay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btXacNhan;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 800);
+            this.ClientSize = new System.Drawing.Size(667, 985);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "formSuaTTGiay";
             this.Text = "formSuaTTGiay";
             this.Load += new System.EventHandler(this.formSuaTTGiay_Load);

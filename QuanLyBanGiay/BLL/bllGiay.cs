@@ -41,5 +41,20 @@ namespace BLL
         {
             return dalGiay.HienThiDanhSachTimKiem(ma);
         }
+
+        public DataTable TimKiemVoiTen(string ten)
+        {
+            return dalGiay.HienThiDanhSachTimKiem(ten);
+        }
+
+        public DataTable TimKiemVoiSize(double size, string str)
+        {
+            return dalGiay.HienThiDanhSachTimKiem(size, str);
+        }
+
+        public DataTable TimKiemVoiGia(double gia, string str)
+        {
+            return dalGiay.HienThiDanhSachTimKiem(gia, str);
+        }
     }
 }

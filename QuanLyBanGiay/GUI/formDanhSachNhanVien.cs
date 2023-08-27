@@ -25,13 +25,14 @@ namespace GUI
         private void formDanhSachNhanVien_Load(object sender, EventArgs e)
         {
             nv = new bllNhanVien();
-            dtList.DataSource = nv.HienThiDanhSachGiay();
+            dtList.DataSource = nv.HienThiDanhSachNV();
         }
 
         private void btThem_Click(object sender, EventArgs e)
         {
             formThemNV them = new formThemNV();
             them.ShowDialog();
+            dtList.DataSource = nv.HienThiDanhSachNV();
         }
 
         private void btXoa_Click(object sender, EventArgs e)
@@ -52,10 +53,10 @@ namespace GUI
 
                 current = new dtoNhanVien(MaNhanVien, TenNV, NgaySinh, SDT);
 
-                if (nv.XoaGiay(MaNhanVien))
+                if (nv.XoaNV(MaNhanVien))
                 {
                     MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dtList.DataSource = nv.HienThiDanhSachGiay();
+                    dtList.DataSource = nv.HienThiDanhSachNV();
                 }
             }
             else

@@ -30,9 +30,9 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.dtList = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -70,12 +70,14 @@ namespace GUI
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(213)))), ((int)(((byte)(234)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(750, 670);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1000, 825);
             this.guna2CustomGradientPanel1.TabIndex = 1;
             // 
             // guna2CustomGradientPanel2
             // 
+            this.guna2CustomGradientPanel2.AutoSize = true;
             this.guna2CustomGradientPanel2.Controls.Add(this.dtList);
             this.guna2CustomGradientPanel2.Controls.Add(this.btThem);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2Panel1);
@@ -85,23 +87,26 @@ namespace GUI
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(213)))), ((int)(((byte)(234)))));
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(750, 670);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1000, 825);
             this.guna2CustomGradientPanel2.TabIndex = 2;
             // 
             // dtList
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dtList.AllowUserToAddRows = false;
+            this.dtList.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtList.AutoGenerateColumns = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtList.ColumnHeadersHeight = 17;
             this.dtList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -110,21 +115,22 @@ namespace GUI
             this.mãGiàyDataGridViewTextBoxColumn,
             this.sốLượngDataGridViewTextBoxColumn});
             this.dtList.DataSource = this.hóaĐơnNhậpHàngBindingSource2;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtList.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtList.Location = new System.Drawing.Point(40, 120);
+            this.dtList.Location = new System.Drawing.Point(53, 148);
+            this.dtList.Margin = new System.Windows.Forms.Padding(4);
             this.dtList.Name = "dtList";
             this.dtList.ReadOnly = true;
             this.dtList.RowHeadersVisible = false;
             this.dtList.RowHeadersWidth = 51;
-            this.dtList.Size = new System.Drawing.Size(669, 398);
+            this.dtList.Size = new System.Drawing.Size(892, 490);
             this.dtList.TabIndex = 3;
             this.dtList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtList.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -205,9 +211,10 @@ namespace GUI
             this.btThem.ForeColor = System.Drawing.Color.White;
             this.btThem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.btThem.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Location = new System.Drawing.Point(589, 594);
+            this.btThem.Location = new System.Drawing.Point(785, 731);
+            this.btThem.Margin = new System.Windows.Forms.Padding(4);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(120, 40);
+            this.btThem.Size = new System.Drawing.Size(160, 49);
             this.btThem.TabIndex = 2;
             this.btThem.Text = "Thêm";
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
@@ -220,8 +227,9 @@ namespace GUI
             this.guna2Panel1.Controls.Add(this.txtFind);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(750, 63);
+            this.guna2Panel1.Size = new System.Drawing.Size(1000, 78);
             this.guna2Panel1.TabIndex = 0;
             // 
             // cbOP
@@ -236,16 +244,17 @@ namespace GUI
             this.cbOP.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbOP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbOP.ItemHeight = 30;
-            this.cbOP.Location = new System.Drawing.Point(294, 12);
+            this.cbOP.Location = new System.Drawing.Point(392, 15);
+            this.cbOP.Margin = new System.Windows.Forms.Padding(4);
             this.cbOP.Name = "cbOP";
-            this.cbOP.Size = new System.Drawing.Size(150, 36);
+            this.cbOP.Size = new System.Drawing.Size(199, 36);
             this.cbOP.TabIndex = 2;
             // 
             // btFind
             // 
             this.btFind.Animated = true;
             this.btFind.AutoRoundedCorners = true;
-            this.btFind.BorderRadius = 14;
+            this.btFind.BorderRadius = 17;
             this.btFind.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(213)))), ((int)(((byte)(234)))));
             this.btFind.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btFind.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -255,9 +264,10 @@ namespace GUI
             this.btFind.ForeColor = System.Drawing.Color.White;
             this.btFind.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(80)))), ((int)(((byte)(168)))));
             this.btFind.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btFind.Location = new System.Drawing.Point(609, 17);
+            this.btFind.Location = new System.Drawing.Point(812, 21);
+            this.btFind.Margin = new System.Windows.Forms.Padding(4);
             this.btFind.Name = "btFind";
-            this.btFind.Size = new System.Drawing.Size(100, 30);
+            this.btFind.Size = new System.Drawing.Size(133, 37);
             this.btFind.TabIndex = 1;
             this.btFind.Text = "Tìm kiếm";
             // 
@@ -265,7 +275,7 @@ namespace GUI
             // 
             this.txtFind.Animated = true;
             this.txtFind.AutoRoundedCorners = true;
-            this.txtFind.BorderRadius = 14;
+            this.txtFind.BorderRadius = 17;
             this.txtFind.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFind.DefaultText = "";
             this.txtFind.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -276,13 +286,13 @@ namespace GUI
             this.txtFind.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtFind.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFind.Location = new System.Drawing.Point(450, 17);
-            this.txtFind.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFind.Location = new System.Drawing.Point(600, 21);
+            this.txtFind.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFind.Name = "txtFind";
             this.txtFind.PasswordChar = '\0';
             this.txtFind.PlaceholderText = "";
             this.txtFind.SelectedText = "";
-            this.txtFind.Size = new System.Drawing.Size(150, 30);
+            this.txtFind.Size = new System.Drawing.Size(200, 37);
             this.txtFind.TabIndex = 0;
             // 
             // guna2DragControl1
@@ -306,15 +316,17 @@ namespace GUI
             // 
             // formHDNhapGiay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 670);
+            this.ClientSize = new System.Drawing.Size(1000, 825);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formHDNhapGiay";
             this.Text = "formHDNhapGiay";
             this.Load += new System.EventHandler(this.formHDNhapGiay_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.PerformLayout();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hóaĐơnNhậpHàngBindingSource2)).EndInit();

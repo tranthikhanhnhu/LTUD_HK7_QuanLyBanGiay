@@ -120,7 +120,7 @@ namespace DAL
             SqlCommand sqlCmd = new SqlCommand();
             sqlCmd.CommandType = CommandType.StoredProcedure;
             sqlCmd.CommandText = "Xoa_NV";
-            sqlCmd.Parameters.AddWithValue("@ma", ma);
+            sqlCmd.Parameters.AddWithValue("@MaNhanVien", ma);
 
             sqlCmd.Connection = sqlCon;
             int kt = sqlCmd.ExecuteNonQuery();

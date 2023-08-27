@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BLL;
+using Guna.UI2.WinForms;
 
 namespace GUI
 {
@@ -17,6 +18,7 @@ namespace GUI
         private dtoTaiKhoan tk;
         private formDangNhap dn;
         private Form currentFormChild;
+        private Guna2GradientButton currentButton;
 
         public formMenuAdmin()
         {
@@ -44,6 +46,23 @@ namespace GUI
             childForm.BringToFront();
             childForm.Show();
         }
+        private void effectButton(object sender)
+        {
+            if(currentButton != null)
+            {
+                effectlessButton();
+            }
+            currentButton = (Guna2GradientButton) sender;
+            currentButton.FillColor = Color.FromArgb(149, 67, 167);
+            currentButton.FillColor2 = Color.FromArgb(74, 38, 171);
+            
+        }
+
+        private void effectlessButton()
+        {
+            currentButton.FillColor = Color.FromArgb(33, 36, 77);
+            currentButton.FillColor2 = Color.FromArgb(33, 36, 77);
+        }
 
         private void btHome_Click(object sender, EventArgs e)
         {
@@ -51,6 +70,7 @@ namespace GUI
             {
                 currentFormChild.Close();
             }
+            effectlessButton();
         }
 
         private void btDangXuat_Click(object sender, EventArgs e)
@@ -61,26 +81,30 @@ namespace GUI
 
         private void btGiay_Click(object sender, EventArgs e)
         {
+            effectButton(sender);
             openFormChild(new formDanhSachGiay());
         }
 
         private void btHoaDon_Click(object sender, EventArgs e)
         {
+            effectButton(sender);
             openFormChild(new formHDNhapGiay());
         }
 
         private void btThongKe_Click(object sender, EventArgs e)
         {
-
+            effectButton(sender);
         }
 
         private void btDanhSachNhanVien_Click(object sender, EventArgs e)
         {
+            effectButton(sender);
             openFormChild(new formDanhSachNhanVien());
         }
 
         private void btTaiKhoan_Click(object sender, EventArgs e)
         {
+            effectButton(sender);
             dtoNhanVien nv = new dtoNhanVien();
             bllNhanVien busNV = new bllNhanVien();
 

@@ -89,6 +89,8 @@ namespace GUI
             // 
             // dtList
             // 
+            this.dtList.AllowUserToAddRows = false;
+            this.dtList.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtList.AutoGenerateColumns = false;
@@ -301,6 +303,7 @@ namespace GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(750, 670);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

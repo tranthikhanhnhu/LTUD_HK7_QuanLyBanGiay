@@ -50,8 +50,9 @@ namespace GUI
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(500, 30);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(667, 37);
             this.guna2CustomGradientPanel1.TabIndex = 2;
             // 
             // guna2ControlBox1
@@ -61,8 +62,9 @@ namespace GUI
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
             this.guna2ControlBox1.TabIndex = 0;
             // 
             // guna2CustomGradientPanel2
@@ -78,15 +80,17 @@ namespace GUI
             this.guna2CustomGradientPanel2.Controls.Add(this.txtTen);
             this.guna2CustomGradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(500, 800);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(667, 800);
             this.guna2CustomGradientPanel2.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 468);
+            this.label1.Location = new System.Drawing.Point(139, 576);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 23);
             this.label1.TabIndex = 19;
@@ -98,9 +102,10 @@ namespace GUI
             this.chkAdmin.CheckedState.FillColor = System.Drawing.Color.Lime;
             this.chkAdmin.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.chkAdmin.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.chkAdmin.Location = new System.Drawing.Point(46, 468);
+            this.chkAdmin.Location = new System.Drawing.Point(61, 576);
+            this.chkAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.chkAdmin.Name = "chkAdmin";
-            this.chkAdmin.Size = new System.Drawing.Size(40, 20);
+            this.chkAdmin.Size = new System.Drawing.Size(53, 25);
             this.chkAdmin.TabIndex = 18;
             this.chkAdmin.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.chkAdmin.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -115,11 +120,12 @@ namespace GUI
             this.dtNSinh.FillColor = System.Drawing.Color.White;
             this.dtNSinh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtNSinh.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtNSinh.Location = new System.Drawing.Point(46, 396);
+            this.dtNSinh.Location = new System.Drawing.Point(61, 487);
+            this.dtNSinh.Margin = new System.Windows.Forms.Padding(4);
             this.dtNSinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtNSinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtNSinh.Name = "dtNSinh";
-            this.dtNSinh.Size = new System.Drawing.Size(400, 36);
+            this.dtNSinh.Size = new System.Drawing.Size(533, 44);
             this.dtNSinh.TabIndex = 17;
             this.dtNSinh.Value = new System.DateTime(2023, 8, 23, 20, 4, 42, 193);
             // 
@@ -128,7 +134,7 @@ namespace GUI
             this.btThem.Animated = true;
             this.btThem.AutoRoundedCorners = true;
             this.btThem.BackColor = System.Drawing.Color.Transparent;
-            this.btThem.BorderRadius = 21;
+            this.btThem.BorderRadius = 26;
             this.btThem.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
             this.btThem.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(38)))), ((int)(((byte)(171)))));
             this.btThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -143,9 +149,10 @@ namespace GUI
             this.btThem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(36)))), ((int)(((byte)(77)))));
             this.btThem.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(213)))), ((int)(((byte)(234)))));
             this.btThem.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Location = new System.Drawing.Point(294, 704);
+            this.btThem.Location = new System.Drawing.Point(354, 692);
+            this.btThem.Margin = new System.Windows.Forms.Padding(4);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(180, 45);
+            this.btThem.Size = new System.Drawing.Size(240, 55);
             this.btThem.TabIndex = 16;
             this.btThem.Text = "Thêm";
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
@@ -156,7 +163,7 @@ namespace GUI
             this.txtID.AutoRoundedCorners = true;
             this.txtID.BackColor = System.Drawing.Color.Transparent;
             this.txtID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.txtID.BorderRadius = 17;
+            this.txtID.BorderRadius = 21;
             this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtID.DefaultText = "";
             this.txtID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -168,14 +175,14 @@ namespace GUI
             this.txtID.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtID.ForeColor = System.Drawing.Color.Black;
             this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID.Location = new System.Drawing.Point(46, 179);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtID.Location = new System.Drawing.Point(61, 220);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
             this.txtID.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtID.PlaceholderText = "Mã nhân viên";
             this.txtID.SelectedText = "";
-            this.txtID.Size = new System.Drawing.Size(400, 36);
+            this.txtID.Size = new System.Drawing.Size(533, 44);
             this.txtID.TabIndex = 11;
             // 
             // txtSDT
@@ -184,7 +191,7 @@ namespace GUI
             this.txtSDT.AutoRoundedCorners = true;
             this.txtSDT.BackColor = System.Drawing.Color.Transparent;
             this.txtSDT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.txtSDT.BorderRadius = 17;
+            this.txtSDT.BorderRadius = 21;
             this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSDT.DefaultText = "";
             this.txtSDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -196,14 +203,14 @@ namespace GUI
             this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtSDT.ForeColor = System.Drawing.Color.Black;
             this.txtSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSDT.Location = new System.Drawing.Point(46, 247);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtSDT.Location = new System.Drawing.Point(61, 304);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
             this.txtSDT.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtSDT.PlaceholderText = "Số điện thoại";
             this.txtSDT.SelectedText = "";
-            this.txtSDT.Size = new System.Drawing.Size(400, 36);
+            this.txtSDT.Size = new System.Drawing.Size(533, 44);
             this.txtSDT.TabIndex = 10;
             // 
             // txtMK
@@ -212,7 +219,7 @@ namespace GUI
             this.txtMK.AutoRoundedCorners = true;
             this.txtMK.BackColor = System.Drawing.Color.Transparent;
             this.txtMK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.txtMK.BorderRadius = 17;
+            this.txtMK.BorderRadius = 21;
             this.txtMK.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMK.DefaultText = "";
             this.txtMK.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -224,14 +231,14 @@ namespace GUI
             this.txtMK.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtMK.ForeColor = System.Drawing.Color.Black;
             this.txtMK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMK.Location = new System.Drawing.Point(46, 326);
-            this.txtMK.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtMK.Location = new System.Drawing.Point(61, 401);
+            this.txtMK.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtMK.Name = "txtMK";
             this.txtMK.PasswordChar = '\0';
             this.txtMK.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtMK.PlaceholderText = "Mật khẩu";
             this.txtMK.SelectedText = "";
-            this.txtMK.Size = new System.Drawing.Size(400, 36);
+            this.txtMK.Size = new System.Drawing.Size(533, 44);
             this.txtMK.TabIndex = 9;
             // 
             // txtTen
@@ -240,7 +247,7 @@ namespace GUI
             this.txtTen.AutoRoundedCorners = true;
             this.txtTen.BackColor = System.Drawing.Color.Transparent;
             this.txtTen.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(67)))), ((int)(((byte)(167)))));
-            this.txtTen.BorderRadius = 17;
+            this.txtTen.BorderRadius = 21;
             this.txtTen.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTen.DefaultText = "";
             this.txtTen.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -252,25 +259,28 @@ namespace GUI
             this.txtTen.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtTen.ForeColor = System.Drawing.Color.Black;
             this.txtTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTen.Location = new System.Drawing.Point(46, 105);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtTen.Location = new System.Drawing.Point(61, 129);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtTen.Name = "txtTen";
             this.txtTen.PasswordChar = '\0';
             this.txtTen.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtTen.PlaceholderText = "Tên nhân viên";
             this.txtTen.SelectedText = "";
-            this.txtTen.Size = new System.Drawing.Size(400, 36);
+            this.txtTen.Size = new System.Drawing.Size(533, 44);
             this.txtTen.TabIndex = 5;
             // 
             // formThemNV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btThem;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 800);
+            this.ClientSize = new System.Drawing.Size(667, 800);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formThemNV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "formThemNV";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
